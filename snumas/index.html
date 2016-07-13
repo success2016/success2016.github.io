@@ -3,34 +3,79 @@
 
 <head>
     <title>Sunset in Your Palm</title>
-    <style>
-    body{
-      background-color: maroon;
-      color: white;
 
-      font-family: Helvetica, Arial, sans-serif;
-      font-weight: lighter;
-    }
-    a{
-      color: gold;
-      text-decoration: none;
-    }
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+    <style>
+        body {
+            background-color: maroon;
+            color: white;
+            font-family: 'Robot', Helvetica, Arial, sans-serif;
+            font-weight: lighter;
+            margin: 0;
+        }
+
+        main {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        a {
+            color: gold;
+            text-decoration: none;
+        }
+
+        .background {
+            background-image: url("https://images.unsplash.com/40/lUUnN7VGSoWZ3noefeH7_Baker%20Beach-12.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9830bb02b8bb95521290b442165c62bb");
+            background-size: cover;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #led {
+            width: 100%;
+        }
+
+        .big-header {
+            text-transform: uppercase;
+
+            font-size: 50px;
+            padding-bottom: 20px;
+        }
+
+        .small-header {
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
+    <header>
+        <div class="background">
+            <div class="big-header">Sunset in your Palm</div>
+            <div class="small-header">Scott Numamoto - Monday June 26, 2016</div>
+        </div>
+    </header>
+    <main>
 
-    <h1>Sunset in your Palm</h1>
-    <div>By Scott Numamoto - Monday June 26, 2016</div>
 
-    <img src="circuit2.jpg" alt="Circuit">
 
-    <p>Using an Arduino, breadboard, LED, and some other miscellaneous electronics, I made a sunset that can fit in your hand. The clear plastic bulb in the above picture is a LED that can display multiple colors. The inspiration behind making this was <a href="https://justgetflux.com/">F.lux</a>, a program that adjusts the colors of your computer screen to match that of your circadien rhythm. After the sun sets, F.lux shifts the screen colors to be more red and orange. This LED serves as a proof of concept for lamp that is a physical version of F.lux.</p>
+        <p>Using an Arduino, breadboard, LED, and some other miscellaneous electronics, I made a sunset that can fit in your hand. The clear plastic bulb in the above picture is a LED that can display multiple colors. The inspiration behind making this was
+            <a href="https://justgetflux.com/">F.lux</a>, a program that adjusts the colors of your computer screen to match that of your circadien rhythm. After the sun sets, F.lux shifts the screen colors to be more red and orange. This LED serves as
+            a proof of concept for lamp that is a physical version of F.lux.</p>
 
-    <h2>A stumper</h2>
+        <img src="circuit2.jpg" id="led" alt="Circuit">
 
-    <p>It turned out that LED was not very good at combining each of its colors ( red, green, and blue). It looked a lot like just three different LEDs sitting next to each other. After some experimenting, I realized I needed something to diffuse and combine the colors. Scotch tape diffused and mixed the colors a little bit, but not very well. Tissues turned out to be an effective solution - they have a lot of surface area for the light to bounce around in and mix together.</p>
+        <h2>A stumper</h2>
 
+        <p>It turned out that LED was not very good at combining each of its colors ( red, green, and blue). It looked a lot like just three different LEDs sitting next to each other. After some experimenting, I realized I needed something to diffuse and
+            combine the colors. Scotch tape diffused and mixed the colors a little bit, but not very well. Tissues turned out to be an effective solution - they have a lot of surface area for the light to bounce around in and mix together.</p>
+    </main>
 </body>
 
 </html>
